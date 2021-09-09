@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -30,17 +31,55 @@
                         <span>+1 (800) 123 456 789</span>
                     </div>
                     <div class="header-nav flex-layout align-items-center">
-                        <nav>
-                            <div id="menu">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="#09432b" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
+                        <span class="mb-menu-toggle">
+                            <i class="fas fa-bars" id="mb-menu-toggle"></i>
+                        </span>
+                        <div class="header-menu size-14" id="header-menu">
+                            <div class="logo-text flex-layout align-items-center justify-content-between">
+                                <h4>Menu</h4>
+                                <span>
+                                    <i class="fas fa-times" id="mb-menu-close"></i>
+                                </span>
                             </div>
-                        </nav>
+                            <nav class="custom-menu">
+                                <ul class="custom-list__menu">
+                                    <li class="active custom-list__item"><a href="#">Home</a></li> <!-- mega menu -->
+                                    <li class="mega-dropdown custom-list__item"> <a href="#">Shop<i
+                                                class="fas fa-chevron-down"></i></a>
+                                        <div class="mega-content">
+                                            <ul>
+                                                <li><a href="#">Wireless</a></li>
+                                                <li><a href="#">Inear headphone</a></li>
+                                                <li><a href="#">Overear headphone</a></li>
+                                                <li><a href="#">sport headphone</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mega-dropdown custom-list__item"> <a href="#">Page<i
+                                                class="fas fa-chevron-down"></i></a>
+                                        <div class="mega-content">
+                                            <ul>
+                                                <li> <a href="">Store Locator</a> </li>
+                                                <li> <a href="">Shop by brand</a> </li>
+                                                <li> <a href="">Faq</a> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mega-dropdown custom-list__item"> <a href="#">Blog<i
+                                                class="fas fa-chevron-down"></i></a>
+                                        <div class="mega-content">
+                                            <ul>
+                                                <li> <a href="">Newletter</a> </li>
+                                                <li> <a href="">Author</a> </li>
+                                                <li> <a href="">Post</a> </li>
+                                            </ul>
+                                        </div>
+                                    </li> <!-- end mega menu -->
+                                    <li class="custom-list__item"><a href="#">contact us</a></li>
+                                    <li class="custom-list__item"><a href="#">about us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                         <div class="header-search">
                             <form action="" class="form search flex-layout align-items-center">
                                 <div class="header-search__input">
@@ -118,11 +157,16 @@
                                     <img src="/images/slider1_1.jpg" alt="">
                                 </div>
                                 <div class="slider-content left-text flex-layout">
-                                    <h5 class="trend size-13">trending</h5>
-                                    <h4 class="size-40">orange mango</h4>
-                                    <h4 class="size-40">provides vitamins</h4>
-                                    <p>Discount 20% On Products</p>
-                                    <a href="" class="btn size-13">
+                                    <h5 class="animate__animated animate__bounceIn animate__slower trend size-13">
+                                        trending</h5>
+                                    <h4 class="animate__animated  animate__fadeInLeft animate__delay-1s size-40">orange
+                                        mango</h4>
+                                    <h4 class="animate__animated  animate__fadeInLeft animate__delay-2s size-40">
+                                        provides vitamins</h4>
+                                    <p class="animate__animated animate__fadeInUp animate__delay-3s">Discount 20% On
+                                        Products</p>
+                                    <a href=""
+                                        class="animate__animated animate__fadeInUp animate__delay-4s btn size-13">
                                         shop now
                                     </a>
                                 </div>
@@ -975,7 +1019,7 @@
                 </div>
 
                 <footer class="page-footer">
-                    <div class="">
+                    <div class="container">
                         <div class="footer-top">
                             <div class="footer-top__link flex-layout justify-content-between">
                                 <div class="footer-links about-store">
@@ -1240,6 +1284,10 @@
         </div>
     </main>
     <!-- End Page Main -->
+    <script>
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-menu').classList.add('active'))
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-menu').classList.remove('active'))
+    </script>
 
 
 </body>
