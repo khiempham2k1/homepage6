@@ -106,10 +106,10 @@ header {
 .header-wrapper .logo-container::before {
     position: absolute;
     content: '';
-    left: -100%;
     top: 0;
     bottom: 0;
     right: 0;
+    width: 100vw;
     background-color: inherit;
     z-index: 1;
 }
@@ -124,6 +124,12 @@ header {
     color: #fff;
     padding: 20px 15px;
     text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mb-menu-toggle{
+    font-size: 24px;
+    color: #136040;
     font-weight: 500;
 }
 
@@ -351,10 +357,10 @@ label.menu-btn {
 .sidebar::before {
     position: absolute;
     content: '';
-    left: -100%;
     top: 0;
     bottom: 0;
     right: 0;
+    width: 100vw;
     background-color: inherit;
     z-index: -1;
 }
@@ -819,6 +825,53 @@ li.list-menu__item .list-menu__title {
     text-align: center;
     border-radius: 35px;
     padding: 10px 0;
+}
+.product .product-item .product-img img{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.product .product-item .product-hover{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.product-label div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+.product-label div:not(:last-child){
+    margin-right: 5px;
+}
+
+.product-item:hover .product-img img {
+    opacity: 0.2;
+}
+  
+.product-item:hover .product-hover {
+    opacity: 1;
+}
+
+.product-item:hover .product-cart{
+    background-color: #95ae00;
+    color: #ffffff;
+}
+
+.product-item:hover{
+    transition: all .7s;
+    box-shadow: 0 10px 28px rgba(129, 129, 129, 0.3), 0 15px 12px rgba(131, 130, 130, 0.22);
 }
 
 /* banner bottom */
