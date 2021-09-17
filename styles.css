@@ -10,6 +10,7 @@ html,
 body {
     font-family: 'Rubik', sans-serif;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -1176,9 +1177,13 @@ li.footer-list a:hover {
 }
 
 .app-links {
-    background-color: #136040;
+    background-color: #084d30;
     padding: 10px 30px 10px 10px;
     border-radius: 5px;
+}
+
+.app-links:first-child {
+    margin-right: 10px;
 }
 
 .app-links__down {
@@ -1250,6 +1255,10 @@ li.footer-bottom__list:not(:first-child) {
     color: #95ae00;
 }
 
+.footer-title i{
+    display: none;
+}
+
 
 @media (max-width: 1440px) and (min-width: 992px){
     .banner-content .size-24{
@@ -1311,6 +1320,10 @@ li.footer-bottom__list:not(:first-child) {
     .service .row .col-auto{
         padding: 0 5px;
     }
+
+    .footer-bottom__menu{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -1318,7 +1331,57 @@ li.footer-bottom__list:not(:first-child) {
         display: none;
     }
 
+    .footer-top{
+        margin: 0 90px 30px 60px;
+    }
 
+    .footer-top__link .footer-links{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-title i {
+        display: block;
+    }
+
+    .footer-links{
+        background-color: #136040;
+        border-radius: 2px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .footer-content{
+        display: none;
+        position: relative;
+        width: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: visible;
+        background-color: #136040;
+        padding-left: 20px;
+    }
+
+    .footer-links:hover .footer-content{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .footer-bottom{
+        padding-top: 0;
+        border: 0;
+    }
     /* .header-search{
         order: 3;
     } */
@@ -1395,6 +1458,10 @@ li.footer-bottom__list:not(:first-child) {
     .banner-bottom__card .col-xl-4 {
         flex: 0 0 auto;
         width: calc(33.33333333% - 20px);
+    }
+
+    .footer-top__link .footer-links{
+        flex: 1;
     }
 
     .footer-top__link .footer-links.about-store {
@@ -1509,6 +1576,15 @@ li.footer-bottom__list:not(:first-child) {
     .col-md-3 {
         flex: 0 0 auto;
         width: calc(25% - 20px);
+    }
+
+    .footer-top__link .footer-links{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .footer-links{
+        margin-bottom: 40px;
     }
 
     /* .col-md-6 {
