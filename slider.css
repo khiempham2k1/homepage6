@@ -1,0 +1,168 @@
+
+body .page-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+
+.slider-banner{
+    margin-top: 40px;
+}
+
+
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-layout{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-slider{
+    max-width: 850px;
+}
+
+.col-banner-left , .col-banner-right{
+    max-width: 300px;
+}
+
+
+
+.banner-item img,
+.slider-img img {
+    border-radius: 15px;
+}
+
+.banner-item,
+.col-slider {
+    position: relative;
+}
+
+.banner-item .banner-content h4 {
+    line-height: 1.3;
+}
+
+.banner-item .banner-content p {
+    margin-top: 25px;
+}
+
+.col-banner-left .banner-item:first-child{
+    padding-bottom: 20px;
+}
+
+.col-slider{
+    margin-right: 10px;
+}
+
+.col-banner-left{
+    margin: 0 10px;
+}
+
+.col-banner-right{
+    margin-left: 10px;
+}
+
+
+.col-slider .slider-content {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    margin-left: 70px;
+}
+
+.slider-content .trend {
+    text-transform: uppercase;
+    background-color: #ee0505;
+    padding: 4px 15px;
+    border-radius: 2px;
+    margin-bottom: 35px;
+}
+
+.slider-content .size-40 {
+    text-transform: capitalize;
+    line-height: 1.3;
+}
+
+.slider-content p {
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.slider-content .btn {
+    color: #09432b;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 14px 55px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin-top: 55px;
+}
+
+.banner-item .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    z-index: 2;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner-item .banner-content {
+    margin: 40px 0 0 40px;
+}
+
+.banner-content .price-free span {
+    color: #ffb400;
+    font-size: 30px;
+}
+
+.banner-content .price-free span.size-16 {
+    font-size: 16px;
+    vertical-align: super;
+}
+
+/* .banner-left {
+    padding-right: 10px;
+}
+
+.banner-right {
+    padding-left: 10px;
+}
+
+.banner-left .banner-item:first-child {
+    padding-bottom: 20px;
+} */
+
+@media (min-width: 1200px){
+    body .page-container {
+        max-width: 1520px;
+    }
+}

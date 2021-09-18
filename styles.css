@@ -64,8 +64,8 @@ body .page-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     overflow: hidden;
 }
 
@@ -464,7 +464,7 @@ li.list-menu__item .list-menu__title {
     margin-left: 0;
 }
 
-.col-top.row,
+.col-top.flex-layout,
 .col-top .row {
     flex-wrap: nowrap;
 }
@@ -472,6 +472,28 @@ li.list-menu__item .list-menu__title {
 .banner-item img,
 .slider-img img {
     border-radius: 15px;
+}
+
+.col-slider{
+    width: 850px;
+    max-width: 100%;
+}
+
+.col-banner-left , .col-banner-right{
+    width: 300px;
+    max-width: 100%;
+}
+
+.col-slider{
+    margin-right: 10px;
+}
+
+.col-banner-left{
+    margin: 0 10px;
+}
+
+.col-banner-right{
+    margin-left: 10px;
 }
 
 .banner-item,
@@ -557,15 +579,15 @@ li.list-menu__item .list-menu__title {
     vertical-align: super;
 }
 
-.banner-left {
+/* .banner-left {
     padding-right: 10px;
 }
 
 .banner-right {
     padding-left: 10px;
-}
+} */
 
-.banner-left .banner-item:first-child {
+.col-banner-left .banner-item:first-child {
     padding-bottom: 20px;
 }
 
@@ -1213,13 +1235,13 @@ li.footer-bottom__list:not(:first-child) {
 }
 
 @media only screen and (max-width: 1023px) {
-    .col-top .col-banner {
+    .col-banner-right {
         display: none;
     }
 }
 
 @media only screen and (max-width:1199px) {
-    .phone-number {
+    .phone-number,.col-banner-left {
         display: none;
     }
 }
@@ -1335,6 +1357,11 @@ li.footer-bottom__list:not(:first-child) {
         display: block;
         opacity: 1;
         visibility: visible;
+    }
+
+    .col-slider {
+        flex: 0 0 100%;
+        width: 100%;
     }
 
     .product-label {
@@ -1560,7 +1587,7 @@ li.footer-bottom__list:not(:first-child) {
     }
 
     body .page-container {
-        max-width: 1490px;
+        max-width: 1520px;
     }
 
     .cate .col-xl-2 {
@@ -1594,10 +1621,10 @@ li.footer-bottom__list:not(:first-child) {
 }
 
 @media (min-width: 1024px) {
-    .col-top .col-slider {
+    /* .col-top .col-slider {
         flex: 0 0 auto;
         width: 57.10%;
-    }
+    } */
 }
 
 @media (min-width: 992px) {
@@ -1620,11 +1647,11 @@ li.footer-bottom__list:not(:first-child) {
         flex: 1;
     }
 
-    .col-top .col-banner {
+    /* .col-top .col-banner {
         flex: 0 0 auto;
         width: 43%;
         padding-left: 20px;
-    }
+    } */
 
     .service .row {
         padding: 30px 0;
