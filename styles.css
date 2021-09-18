@@ -1093,10 +1093,6 @@ li.footer-list a:hover {
     transition: all 0.5s;
 }
 
-.apple-icon p,
-.chplay-icon p {
-    padding-bottom: 0;
-}
 
 .app-links {
     background-color: #084d30;
@@ -1104,8 +1100,8 @@ li.footer-list a:hover {
     border-radius: 5px;
 }
 
-.app-links:first-child {
-    margin-right: 10px;
+.chplay-icon {
+    margin-left: 10px;
 }
 
 .app-links__down {
@@ -1122,10 +1118,6 @@ li.footer-list a:hover {
 .app-links__down span:last-child {
     font-size: 11px;
     text-transform: uppercase;
-}
-
-.chplay-icon {
-    margin-left: 10px;
 }
 
 .coupon span {
@@ -1503,6 +1495,7 @@ li.footer-bottom__list:not(:first-child) {
     .product-filter {
         margin-bottom: 10px;
     }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1513,6 +1506,11 @@ li.footer-bottom__list:not(:first-child) {
     .product-item .product-sale .sale {
         margin-right: 0;
         margin-bottom: 5px;
+    }
+    
+    .chplay-icon{
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
 
