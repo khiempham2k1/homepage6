@@ -342,6 +342,7 @@ label.menu-btn {
 
 .columns .column.main {
     width: calc(100% - 350px);
+    padding: 0 20px;
 }
 
 .columns .sidebar-main {
@@ -353,7 +354,7 @@ label.menu-btn {
     width: 350px;
     max-width: 100%;
     z-index: 3;
-    padding: 40px 0 40px 40px;
+    padding: 40px;
     background-color: #ffffff;
     border-right: 1px solid #dde3e9;
 }
@@ -371,6 +372,8 @@ li.list-menu__item .list-menu__title {
     font-size: 13px;
     text-transform: uppercase;
     color: #7d879c;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 
 .list-menu__item{
@@ -393,12 +396,16 @@ li.list-menu__item .list-menu__title {
     color: #95ae00;
 }
 
-/* .list-menu li {
-    margin-bottom: 16px;
-} */
-.list-menu__title {
-    margin-bottom: 25px;
+.contact {
+    padding-top: 45px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 }
+
+.contact .submenu li:last-child{
+    padding-bottom: 10px;
+}
+
 
 .submenu-icon {
     width: 38px;
@@ -410,12 +417,12 @@ li.list-menu__item .list-menu__title {
     align-items: center;
 }
 
-.submenu li{
-    padding-bottom: 25px;
+.submenu li:not(:last-child){
+    padding-bottom: 23px;
 }
 
 
-.submenu .submenu-icon{
+.submenu .submenu-icon, .follow .submenu li{
     padding-bottom: 0;
 }
 
@@ -435,13 +442,33 @@ li.list-menu__item .list-menu__title {
 }
 
 .submenu-item {
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
-.submenu-item i {
-    font-size: 9px;
-    color: #dfe5ea;
-    margin-right: 13px;
+.submenu-item .submenu-links{
+    position: relative;
+    padding-left: 20px;
+}
+
+.submenu-item .submenu-links::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #cde4da;
+}
+
+.submenu-item:not(:last-child) .submenu-links::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 13px;
+    height: 35px;
+    width: 1px;
+    background-color: #ebebeb;
 }
 
 .follow ul.submenu {
@@ -451,9 +478,11 @@ li.list-menu__item .list-menu__title {
 .submenu-cate {
     border-right: 2px solid #aeb4be;
     border-radius: 2px;
+    margin-right: -40px;
 }
 
 /* end sidebar */
+
 .row>* {
     padding-left: 0;
     padding-right: 0;
@@ -1004,6 +1033,8 @@ li.list-menu__item .list-menu__title {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .newletter-body {
@@ -1087,6 +1118,8 @@ input[type="email"] {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #09432b;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .footer-top {
@@ -1218,6 +1251,20 @@ li.footer-bottom__list:not(:first-child) {
     display: none;
 }
 
+
+@media only screen and (max-width:1365px) {
+    .service .col-auto:last-child {
+        display: none;
+    }
+    .slider-content .trend{
+        margin-bottom: 15px;
+    }
+
+    .slider-content .btn {
+        margin-top: 25px;
+    }
+}
+
 @media (max-width: 1440px) and (min-width: 992px) {
     .banner-content .size-24 {
         font-size: 1.66666667vw;
@@ -1225,12 +1272,6 @@ li.footer-bottom__list:not(:first-child) {
 
     .banner-content .size-16 {
         font-size: 1.11111111vw;
-    }
-}
-
-@media only screen and (max-width:1365px) {
-    .service .col-auto:last-child {
-        display: none;
     }
 }
 
@@ -1256,6 +1297,12 @@ li.footer-bottom__list:not(:first-child) {
         flex: 0 0 100%;
         width: 100%;
         margin-top: 40px;
+        padding: 0px;
+    }
+
+    .newletter, .page-footer{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .header-wrapper .logo-container {
@@ -1284,8 +1331,7 @@ li.footer-bottom__list:not(:first-child) {
         position: fixed;
         top: 0;
         border: 0;
-        padding-top: 0;
-        padding-left: 30px;
+        padding: 0;
         z-index: 99;
     }
 
@@ -1562,6 +1608,14 @@ li.footer-bottom__list:not(:first-child) {
 @media only screen and (max-width: 375px) {
     .product .product-item .product-sale {
         flex-direction: column;
+    }
+
+    .banner-bottom__content .size-24{
+        font-size: 21px;
+    }
+
+    .banner-bottom__content .size-16 {
+        margin-top: 10px;
     }
 
     .product-item .product-sale .sale {
