@@ -993,6 +993,10 @@ li.list-menu__item .list-menu__title {
     flex-wrap: nowrap;
 }
 
+.product-label a > img{
+    stroke: #fff;
+}
+
 .product-label div {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1689,7 +1693,7 @@ li.footer-bottom__list:not(:first-child) {
         margin-left: 0;
     }
 
-    .user-nav svg {
+    .user-nav img {
         width: 20px;
         height: 20px;
     }
