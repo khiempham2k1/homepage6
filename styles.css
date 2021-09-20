@@ -392,6 +392,10 @@ li.list-menu__item .list-menu__title {
     font-weight: 500;
 }
 
+.submenu-item:hover, .cate-title:hover{
+    color: #95ae00;
+}
+
 .active,
 .contact h5 {
     color: #95ae00;
@@ -637,6 +641,11 @@ li.list-menu__item .list-menu__title {
 .flash-sale{
     padding-top: 30px;
 }
+
+.super-title .title-deal{
+    position: relative;
+}
+
 
 .title-deal h3 {
     font-size: 24px;
@@ -1725,6 +1734,7 @@ li.footer-bottom__list:not(:first-child) {
     .header-search {
         max-width: 600px;
         margin-left: 12px;
+        margin-right: 10px;
     }
 
     .row-cols-md-3>* {
