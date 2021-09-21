@@ -125,7 +125,7 @@ header {
     align-items: center;
     background-color: #95ae00;
     position: relative;
-    width: 128px;
+    width: 130px;
 }
 
 .header-wrapper .logo-container::before {
@@ -698,7 +698,7 @@ li.list-menu__item .list-menu__title {
 
 /* end service */
 .flash-sale {
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .flash-sale .title-deal h3 {
@@ -727,18 +727,19 @@ li.list-menu__item .list-menu__title {
     border-bottom: 1px solid #d2d2d2;
 }
 
+
 .see-next .fas.fa-chevron-left {
-    background-color: #ffffff;
     border: 1px solid #e3e8ed;
-    color: #e3e8ed;
     margin-right: 7px;
 }
 
 .see-next i {
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    background-color: #ffffff;
+    color: #e3e8ed;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -750,7 +751,7 @@ li.list-menu__item .list-menu__title {
     align-items: center;
 }
 
-.see-next .fas.fa-chevron-right {
+.flash-sale .see-next .fas.fa-chevron-right {
     background-color: #95ae00;
     color: #fff;
 }
@@ -810,7 +811,7 @@ li.list-menu__item .list-menu__title {
 /* end cate */
 /* product sell */
 .product-sell {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .product-filter li {
@@ -841,7 +842,7 @@ li.list-menu__item .list-menu__title {
 }
 
 .product-content {
-    padding: 10px 20px 20px 20px;
+    padding: 7px 20px 20px 20px;
 }
 
 .product .product-item {
@@ -896,7 +897,7 @@ li.list-menu__item .list-menu__title {
 .rating {
     font-size: 14px;
     color: #ff9300;
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
 }
 
 .product-price {
@@ -1208,6 +1209,8 @@ input[type="email"] {
     width: 100%;
     height: 50px;
 }
+
+
 
 .newletter-form .form.subcribe .form-input {
     -webkit-box-flex: 1;
@@ -1949,11 +1952,11 @@ li.footer-bottom__list:not(:first-child) {
 
 @media (min-width: 992px) {
     .container-header {
-        max-width: 1840px;
+        max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: auto;
