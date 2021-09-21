@@ -2032,9 +2032,6 @@ li.footer-bottom__list:not(:first-child) {
         width: calc(50% - 20px);
     }
 
-    .footer-top{
-        margin-bottom: 0;
-    }
 
     .footer-top__link .footer-links {
         -webkit-box-flex: 0;
