@@ -87,7 +87,68 @@
                                     <span class="qty-cart">0</span> </a> </li>
                         </ul>
                         <div class="user-nav flex-layout align-items-center">
-                            <h5>Tell me more</h5> <img src="images/icon-nav.svg" alt="">
+                            <h5>Tell me more</h5> <span id="mb-user-toggle"><img src="images/icon-nav.svg"
+                                    alt=""></span>
+                            <div class="user-setting" id="user-setting">
+                                <div class="settings-head">
+                                    <span><i class="fas fa-times" id="mb-user-close"></i></span>
+                                </div>
+                                <div class="settings-inner">
+                                    <div class="language-currency">
+                                        <div class="language switcher">
+                                            <strong class="switcher-label">
+                                                Language <i class="fas fa-angle-down"></i>
+                                            </strong>
+                                            <ul class="dropdown-content">
+                                                <li><a href="#">Vietnamese</a></li>
+                                                <li><a href="#">Japan</a></li>
+                                                <li><a href="#">French</a></li>
+                                                <li><a href="#">Spain</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="currency switcher">
+                                            <strong class="switcher-label">
+                                                Currency <i class="fas fa-angle-down"></i>
+                                            </strong>
+                                            <ul class="dropdown-content">
+                                                <li><a href="#">VND-VietNam</a></li>
+                                                <li><a href="#">JPY-Japan</a></li>
+                                                <li><a href="#">EUR-English</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="setting-contact">
+                                        <h3 class="title">Contacts</h3>
+                                        <div class="contact-info-wrap">
+                                            <div class="contact-info">
+                                                <span><i class="far fa-paper-plane"></i></span>
+                                                <div class="contact-content">
+                                                    No. Rosecrans Ave, Suite 200 El Segundo, CA 90245. USA
+                                                </div>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span><i class="fas fa-phone-alt"></i></span>
+                                                <div class="contact-content">
+                                                    Call: +1 (202) 861-5567
+                                                </div>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span><i class="far fa-envelope"></i></span>
+                                                <div class="contact-content">Email: Support@demo.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting-social">
+                                        <h3 class="title">Connect on Social</h3>
+                                        <ul class="social-links flex-layout">
+                                            <li> <a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -940,6 +1001,8 @@
     <script>
         document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-menu').classList.add('active'));
         document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-menu').classList.remove('active'));
+        document.querySelector('#mb-user-toggle').addEventListener('click', () => document.querySelector('#user-setting').classList.add('active'));
+        document.querySelector('#mb-user-close').addEventListener('click', () => document.querySelector('#user-setting').classList.remove('active'));
         document.querySelector('#mb-sidebar-toggle').addEventListener('click', () => document.querySelector('#header-sidebar').classList.add('active'))
         document.querySelector('#mb-sidebar-close').addEventListener('click', () => document.querySelector('#header-sidebar').classList.remove('active'))
     </script>
