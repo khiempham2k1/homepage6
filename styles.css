@@ -852,7 +852,7 @@ li.list-menu__item .list-menu__title {
 
 /* end service */
 .flash-sale {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .flash-sale .title-deal h3 {
@@ -1262,7 +1262,7 @@ li.list-menu__item .list-menu__title {
 }
 
 .reviews-body {
-    padding: 30px;
+    padding: 29px;
 }
 
 .reviews-body .rating {
@@ -1272,7 +1272,8 @@ li.list-menu__item .list-menu__title {
 .reviews-content {
     font-size: 14px;
     color: #4b566b;
-    padding: 10px 0 20px 0px;
+    padding: 10px 0 17px 0px;
+    line-height: 1.7;
 }
 
 .reviews-thumb {
