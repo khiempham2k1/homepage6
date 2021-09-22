@@ -1608,10 +1608,10 @@ li.footer-bottom__list:not(:first-child) {
     }
 
     .slider-content .trend {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
-    .slider-content .btn.slider-content .btn {
+    .slider-content .btn {
         margin-top: 25px;
     }
 
