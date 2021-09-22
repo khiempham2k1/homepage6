@@ -1509,10 +1509,14 @@ li.footer-list a:hover {
     background-color: #084d30;
     padding: 10px 30px 10px 10px;
     border-radius: 5px;
+    margin: 5px 0;
 }
 
 .apple-icon {
     margin-right: 10px;
+}
+
+.chplay-icon{
 }
 
 .app-links__down {
@@ -2089,11 +2093,6 @@ li.footer-bottom__list:not(:first-child) {
         -webkit-box-align: start !important;
         -ms-flex-align: start !important;
         align-items: flex-start !important;
-    }
-
-    .chplay-icon {
-        margin-top: 10px;
-        margin-left: 0;
     }
 }
 
