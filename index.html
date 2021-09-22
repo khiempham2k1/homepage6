@@ -24,7 +24,8 @@
                     <div class="number flex-layout justify-content-between align-items-center">
                         <div class="phone-number">
                             <h5>Call Free:</h5> <span>+1 (800) 123 456 789</span>
-                        </div> <span class="mb-menu-toggle"> <i class="fas fa-bars" id="mb-menu-toggle"></i> </span>
+                        </div> <span class="mb-menu-toggle" id="mb-menu-toggle"><img src="images/menu.svg"
+                                alt=""></span>
                     </div>
                     <div class="header-nav flex-layout align-items-center">
                         <div class="header-menu size-14" id="header-menu">
@@ -79,11 +80,13 @@
                     </div>
                     <div class="user-menu flex-layout align-items-center">
                         <ul class="user-icon flex-layout align-items-center">
-                            <li> <a href="#" style="background-color: #e8f8f7;"> <img src="images/icon-user.svg" alt="">
+                            <li class="icon-item" style="background-color: #e8f8f7;"> <a href="#"> <img
+                                        src="images/icon-user.svg" alt="">
                                 </a> </li>
-                            <li> <a href="" style="background-color: #f6f3e3;"> <img src="images/icon-wishlist.svg"
-                                        alt=""></a> </li>
-                            <li> <a href="" style="background-color: #f5e8e2;"> <img src="images/icon-cart.svg" alt="">
+                            <li class="icon-item" style="background-color: #f6f3e3;"> <a href=""> <img
+                                        src="images/icon-wishlist.svg" alt=""></a> </li>
+                            <li class="icon-item" style="background-color: #f5e8e2;"> <a href=""> <img
+                                        src="images/icon-cart.svg" alt="">
                                     <span class="qty-cart">0</span> </a> </li>
                         </ul>
                         <div class="user-nav flex-layout align-items-center">
@@ -91,7 +94,7 @@
                                     alt=""></span>
                             <div class="user-setting" id="user-setting">
                                 <div class="settings-head">
-                                    <span><i class="fas fa-times" id="mb-user-close"></i></span>
+                                    <span id="mb-user-close"><img src="images/menu-close.svg" alt=""></span>
                                 </div>
                                 <div class="settings-inner">
                                     <div class="language-currency">
@@ -193,25 +196,25 @@
                                         <h5>hotline</h5> <span>+1 (800) 123 456 789</span>
                                     </li>
                                     <li class="submenu-item">
-                                        <h5>email support</h5> <span>gosto@google.com</span>
+                                        <h5>email support</h5> <span>Gosto@google.com</span>
                                     </li>
                                 </ul>
                             </li>
                             <li class="follow list-menu__item">
                                 <div class="list-menu__title">follow us</div>
                                 <ul class="submenu flex-layout align-items-center">
-                                    <li class="submenu-icon" style="background-color: #3b5998;"><a href=""> <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                                viewBox="0 0 28 28" style="fill: #3b5998;transform: msFilter;">
-                                                <path
-                                                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
-                                                </path>
-                                            </svg> </a></li>
                                     <li class="submenu-icon" style="background-color: #1da1f2;"><a href=""> <svg
                                                 xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                                 viewBox="0 0 28 28" style="fill: #1da1f2;transform: msFilter;">
                                                 <path
                                                     d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                                                </path>
+                                            </svg> </a></li>
+                                    <li class="submenu-icon" style="background-color: #3b5998;"><a href=""> <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                viewBox="0 0 28 28" style="fill: #3b5998;transform: msFilter;">
+                                                <path
+                                                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
                                                 </path>
                                             </svg> </a></li>
                                     <li class="submenu-icon" style="background-color: #ff0000;"><a href=""> <svg
@@ -342,8 +345,10 @@
                                 <p class="time-sale"><span>Ends in: </span> 23:06:42 </p>
                             </div>
                             <div class="line-center" style="width: 65%;"> </div>
-                            <div class="see-next"> <i class="fas fa-chevron-left"></i> <i
-                                    class="fas fa-chevron-right"></i> </div>
+                            <div class="see-next"> <span class="chevron chevron-left"><img src="images/chevron-left.svg"
+                                        alt=""></span> <span class="chevron chevron-right">
+                                    <img src="images/chevron-right.svg" alt="">
+                                </span> </div>
                         </div>
                         <div class="product row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                             <div class="col product-item">
@@ -520,8 +525,11 @@
                                 <h3>popular categories</h3>
                             </div>
                             <div class="line-center" style="width: 75%;"></div>
-                            <div class="see-next"> <i class="fas fa-chevron-left"></i> <i
-                                    class="fas fa-chevron-right"></i> </div>
+                            <div class="see-next"> <span class="chevron chevron-left"><img src="images/chevron-left.svg"
+                                        alt=""></span> <span class="chevron chevron-right">
+                                    <img src="images/chevron-right.svg" alt="">
+                                </span>
+                            </div>
                         </div>
                         <div class="row cate text-center">
                             <div class="col-6 col-xl-2 col-sm-4 col-lg-3 col-md-3 cate-item">
@@ -619,8 +627,11 @@
                                         <li><a href="">fruits</a></li>
                                         <li><a href="">sweets & chips</a></li>
                                     </ul>
-                                    <div class="see-next"> <i class="fas fa-chevron-left"></i> <i
-                                            class="fas fa-chevron-right"></i> </div>
+                                    <div class="see-next"> <span class="chevron chevron-left"><img
+                                                src="images/chevron-left.svg" alt=""></span> <span
+                                            class="chevron chevron-right">
+                                            <img src="images/chevron-right.svg" alt="">
+                                        </span> </div>
                                 </div>
                             </div>
                             <div class="product row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
@@ -804,8 +815,10 @@
                                 <h3>lasted reviews</h3>
                             </div>
                             <div class="line-center" style="width: 80%;"></div>
-                            <div class="see-next"> <i class="fas fa-chevron-left"></i> <i
-                                    class="fas fa-chevron-right"></i> </div>
+                            <div class="see-next"> <span class="chevron chevron-left"><img src="images/chevron-left.svg"
+                                        alt=""></span> <span class="chevron chevron-right">
+                                    <img src="images/chevron-right.svg" alt="">
+                                </span> </div>
                         </div>
                         <div class="reviews-col row">
                             <div class="col-xl-3 col-md-6 col-sm-6 reviews-item">
@@ -906,8 +919,12 @@
                                 <div class="form-button"> <button class="size-13">Subscribe</button> </div>
                             </form>
                         </div>
-                        <div class="newletter-checkbox flex-layout align-items-center"> <input type="checkbox"> <label
-                                class="size-14">I would like to receive news and special offers.</label> </div>
+                        <div class="newletter-checkbox flex-layout align-items-center"> <label class="size-14">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                I would like to receive news and special
+                                offers.
+                            </label> </div>
                     </div>
                 </div> <!-- end newletter -->
                 <footer class="page-footer">

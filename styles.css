@@ -4,6 +4,7 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 * {
@@ -153,7 +154,6 @@ header {
 }
 
 .mb-menu-toggle {
-    font-size: 21px;
     color: #136040;
     font-weight: 500;
 }
@@ -181,12 +181,12 @@ header {
 
 .header-menu {
     height: 100%;
-    width: 352px;
+    width: 350px;
     max-width: 100%;
     overflow-x: auto;
     position: fixed;
     top: 0;
-    left: -352px;
+    left: -350px;
     background-color: #ffffff;
     z-index: 99;
     -webkit-transition: .5s;
@@ -278,25 +278,37 @@ li.custom-list__item {
 
 .settings-head{
     padding: 30px 40px;
-    font-size: 24px;
 }
 
 .settings-inner{
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     padding: 0 40px;
     overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .language-currency{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .language-currency .switcher{
     position: relative;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 .language{
@@ -317,8 +329,13 @@ li.custom-list__item {
 }
 
 .language-currency .switcher .dropdown-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     visibility: visible;
     position: absolute;
     min-width: 120px;
@@ -326,7 +343,10 @@ li.custom-list__item {
     left: 0;
     color: #1f2024;
     background-color: #ffffff;
-    box-shadow: 0 7px 29px 0 rgb(100, 100, 111, 0.2);
+    -webkit-box-shadow: 0 7px 29px 0 rgb(100, 100, 111, 0.2);
+            box-shadow: 0 7px 29px 0 rgb(100, 100, 111, 0.2);
+    -webkit-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 2;
     margin-top: -10px;
@@ -361,6 +381,8 @@ li.custom-list__item {
 }
 
 .setting-contact .contact-info-wrap .contact-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 18px;
     color: #555;
@@ -436,13 +458,20 @@ label.menu-btn {
     margin-right: 15px;
 }
 
-.user-icon a {
-    margin-right: 10px;
-    padding: 12px;
-    border-radius: 50%;
+.user-icon{
+    position: relative;
 }
 
-.user-icon li {
+
+.user-icon .icon-item{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px 12px;
+}
+
+.user-icon .icon-item:nth-child(3){
     position: relative;
 }
 
@@ -465,7 +494,8 @@ label.menu-btn {
     position: absolute;
     line-height: 1;
     margin-top: 0;
-    top: -10px;
+    top: 0;
+    right: -5px;
 }
 
 .header-wrapper.header-sticky.sticky {
@@ -557,11 +587,16 @@ li.list-menu__item .list-menu__title {
 
 .contact {
     padding-top: 35px;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
 }
 
-.contact .submenu li:last-child {
+.contact .submenu .submenu-item span{
+    text-transform: initial;
+}
+
+.contact .submenu .submenu-item{
+    line-height: 1.8;
     padding-bottom: 10px;
 }
 
@@ -569,7 +604,7 @@ li.list-menu__item .list-menu__title {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 8px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -634,7 +669,7 @@ li.list-menu__item .list-menu__title {
 }
 
 .follow ul.submenu {
-    margin-top: 33px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 
@@ -683,8 +718,13 @@ li.list-menu__item .list-menu__title {
 
 .col-banner-left {
     margin: 0 10px;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .col-banner-right {
@@ -805,7 +845,7 @@ li.list-menu__item .list-menu__title {
     color: #09432b;
     font-weight: 600;
     text-transform: uppercase;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 7px;
 }
 
@@ -846,13 +886,12 @@ li.list-menu__item .list-menu__title {
 }
 
 
-.see-next .fas.fa-chevron-left {
+.see-next .chevron-left {
     border: 1px solid #e3e8ed;
     margin-right: 7px;
 }
 
-.see-next i {
-    font-size: 14px;
+.see-next .chevron {
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -869,10 +908,11 @@ li.list-menu__item .list-menu__title {
     align-items: center;
 }
 
-.flash-sale .see-next .fas.fa-chevron-right {
+.flash-sale .see-next .chevron-right {
     background-color: #95ae00;
     color: #fff;
 }
+
 
 .product-item {
     background-color: #ffffff;
@@ -891,7 +931,7 @@ li.list-menu__item .list-menu__title {
 
 /* end flash-sale */
 .category {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .cate {
@@ -948,14 +988,11 @@ li.list-menu__item .list-menu__title {
     background-color: #95ae00;
 }
 
-.product-list .see-next i.fas.fas.fa-chevron-left {
-    margin-left: 10px;
-}
 
 .product,
 .cate {
     margin-left: -20px;
-    margin-top: 20px;
+    margin-top: 25px;
     position: relative;
 }
 
@@ -1149,8 +1186,8 @@ li.list-menu__item .list-menu__title {
     -webkit-transition: all .7s;
     -o-transition: all .7s;
     transition: all .7s;
-    -webkit-box-shadow: 0 10px 28px rgba(129, 129, 129, 0.3), 0 15px 12px rgba(131, 130, 130, 0.22);
-    box-shadow: 0 10px 28px rgba(129, 129, 129, 0.3), 0 15px 12px rgba(131, 130, 130, 0.22);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(9, 67, 43, 0.08);
+            box-shadow: 0px 10px 20px 0px rgba(9, 67, 43, 0.08);
 }
 
 /* banner bottom */
@@ -1350,15 +1387,64 @@ input[type="email"] {
     border-radius: 30px;
 }
 
+
 .newletter-checkbox {
     margin-top: 20px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+.newletter-checkbox label{
+    position: relative;
+}
+
+.newletter-checkbox input{
+    position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.newletter-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    height: 12px;
+    width: 12px;
+    border-radius: 2px;
+    background-color: #95ae00;
+}
+
+.newletter-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.newletter-checkbox .checkmark:after {
+    inset: 0;
+    margin: auto;
+    margin-bottom: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.newletter-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
 .newletter-checkbox .size-14 {
-    margin-left: 10px;
     color: #7d879c;
 }
 
@@ -1370,10 +1456,11 @@ input[type="email"] {
     background-color: #09432b;
     margin-left: -25px;
     margin-right: -25px;
+
 }
 
 .footer-top {
-    padding-top: 80px;
+   padding: 80px 8px 0 8px;
     margin-bottom: 55px;
     color: #cde4da;
     border-bottom: 1px solid rgba(245, 245, 245, .15);
@@ -1994,6 +2081,13 @@ li.footer-bottom__list:not(:first-child) {
     }
 }
 
+@media only screen and (max-width: 325px) {
+    .newletter-checkbox .checkmark{
+        top: 25%;
+        left: 0;
+    }
+}
+
 @media (min-width: 1366px) {
     .service .col-auto {
         width: auto !important;
@@ -2100,7 +2194,9 @@ li.footer-bottom__list:not(:first-child) {
         left: 0;
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         border-right: 1px solid #ebebeb;
     }
 
@@ -2185,3 +2281,4 @@ li.footer-bottom__list:not(:first-child) {
         width: calc(50% - 20px);
     }
 }
+
