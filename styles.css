@@ -1446,7 +1446,7 @@ input[type="email"] {
 
 .footer-top {
     padding-top: 75px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     color: #cde4da;
     border-bottom: 1px solid rgba(245, 245, 245, .15);
 }
@@ -1459,16 +1459,24 @@ input[type="email"] {
     color: #ffffff;
 }
 
+.footer-app .footer-content p:first-child{
+    max-width: 280px;
+}
+
 .footer-content p {
     font-size: 14px;
     padding-bottom: 15px;
+}
+
+.about-store .footer-content p{
+    padding-bottom: 10px;
 }
 
 .footer-phone__number {
     padding-bottom: 5px;
 }
 
-.phone-contact p {
+.about-store .footer-content .phone-contact p {
     padding-bottom: 0;
 }
 
