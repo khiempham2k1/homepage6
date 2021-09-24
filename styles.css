@@ -77,7 +77,6 @@ body .page-container {
 }
 
 header {
-    border-bottom: 1px solid #dde3e9;
     background-color: #ffffff;
 }
 
@@ -495,6 +494,7 @@ label.menu-btn {
     transition: all .5s;
     z-index: 99;
     background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgba(215, 222, 211, 0.3);
 }
 
 /* end header */
@@ -561,8 +561,7 @@ li.list-menu__item .list-menu__title {
     font-weight: 500;
 }
 
-.submenu-item:hover,
-.cate-title:hover {
+.submenu-item:hover{
     color: #95ae00;
 }
 
@@ -600,6 +599,10 @@ li.list-menu__item .list-menu__title {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.follow .submenu li:nth-child(3){
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.2);
 }
 
 .submenu li:not(:last-child) {
@@ -932,6 +935,15 @@ li.list-menu__item .list-menu__title {
     margin-bottom: 20px;
 }
 
+.cate-item:hover{
+    transition: all .7s;
+    box-shadow: 0px 10px 20px 0px rgba(9, 67, 43, 0.08);
+}
+
+.cate-item:hover .cate-title {
+    color: #95ae00;
+}
+
 .cate-body {
     padding: 50px 0;
 }
@@ -1012,12 +1024,15 @@ li.list-menu__item .list-menu__title {
     margin-right: 5px;
     background: #5aab19;
     color: #fff;
+    box-shadow: 0px 7px 10px 0px rgba(90, 171, 25, 0.2);
 }
 
 .product-item .product-sale .hot {
-    background: #cc1414;
+    background: #fe3638;
     color: #fff;
+    box-shadow: 0px 7px 10px 0px rgba(254, 54, 56, 0.2);
 }
+
 
 .product-item .product-sale>span {
     text-align: center;
@@ -1038,7 +1053,7 @@ li.list-menu__item .list-menu__title {
 .rating {
     font-size: 14px;
     color: #ff9300;
-    letter-spacing: -2.5px;
+    letter-spacing: -2px;
 }
 
 .product-price {
@@ -1062,9 +1077,11 @@ li.list-menu__item .list-menu__title {
 }
 
 .price-old {
+    font-size: 14px;
     color: #a4a4a4;
     -webkit-text-decoration-line: line-through;
     text-decoration-line: line-through;
+    margin-top: 2px;
 }
 
 .product-sold .sold-rule {
@@ -1281,7 +1298,7 @@ li.list-menu__item .list-menu__title {
 }
 
 .role-name {
-    line-height: 1;
+    line-height: 1.286;
     margin-left: 10px;
 }
 
