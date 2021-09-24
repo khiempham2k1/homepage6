@@ -762,6 +762,7 @@ li.list-menu__item .list-menu__title {
     padding: 4px 15px;
     border-radius: 2px;
     margin-bottom: 35px;
+    box-shadow: 0px 7px 10px 0px rgba(238, 5, 5, 0.25);
 }
 
 .slider-content .size-40 {
@@ -921,7 +922,7 @@ li.list-menu__item .list-menu__title {
 
 /* end flash-sale */
 .category {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .cate {
@@ -1050,10 +1051,8 @@ li.list-menu__item .list-menu__title {
     font-weight: 700;
 }
 
-.rating {
-    font-size: 14px;
-    color: #ff9300;
-    letter-spacing: -2px;
+.rating span{
+    letter-spacing: -5px;
 }
 
 .product-price {
@@ -1062,7 +1061,7 @@ li.list-menu__item .list-menu__title {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .price {
@@ -1462,7 +1461,7 @@ input[type="email"] {
 }
 
 .footer-top {
-    padding-top: 75px;
+    padding: 75px 8px 0 8px;
     margin-bottom: 70px;
     color: #cde4da;
     border-bottom: 1px solid rgba(245, 245, 245, .15);
