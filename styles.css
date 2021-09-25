@@ -432,7 +432,7 @@ label.menu-btn {
 
 .user-nav {
     background-color: #95ae00;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 20px;
     margin-left: 10px;
 }
@@ -832,7 +832,7 @@ li.list-menu__item .list-menu__title {
 .content h6 {
     font-size: 13px;
     color: #09432b;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 7px;
@@ -983,6 +983,10 @@ li.list-menu__item .list-menu__title {
     border-radius: 20px;
 }
 
+.product-filter li:last-child{
+    margin-right: 20px;
+}
+
 .product-filter li:hover {
     color: #ffffff;
     background-color: #95ae00;
@@ -1048,7 +1052,7 @@ li.list-menu__item .list-menu__title {
 .product-name {
     font-size: 14px;
     color: #09432b;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .rating span{
@@ -1356,6 +1360,7 @@ li.list-menu__item .list-menu__title {
     padding: 3px 3px 3px 0;
     border-radius: 55px;
     background-color: #fff;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
 }
 
 .newletter-form .form.subcribe .form-input input {
@@ -1452,17 +1457,17 @@ input[type="email"] {
 
 /* footer */
 .page-footer {
-    background-image: url('./images/bg-footer.png');
+    background-image: url('./images/bg-footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #09432b;
+    background-position: center;
     margin-left: -25px;
     margin-right: -25px;
 }
 
 .footer-top {
-    padding: 75px 8px 0 8px;
-    margin-bottom: 70px;
+    padding-top: 75px;
+    margin: 0 8px 70px 8px;
     color: #cde4da;
     border-bottom: 1px solid rgba(245, 245, 245, .15);
 }
@@ -1521,7 +1526,7 @@ li.footer-list a:hover {
 }
 
 .app-links {
-    background-color: #084d30;
+    background-color: #136040;
     padding: 10px 30px 10px 10px;
     border-radius: 5px;
     margin: 5px 0;
