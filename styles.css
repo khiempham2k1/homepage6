@@ -2023,12 +2023,14 @@ li.footer-bottom__list:not(:first-child) {
         visibility: visible;
         background-color: #136040;
         padding-left: 20px;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     }
 
     .footer-links:hover .footer-content {
         display: block;
         opacity: 1;
         visibility: visible;
+        transition-delay: 0s, 0s, 0.3s;
     }
 
     .footer-bottom {
