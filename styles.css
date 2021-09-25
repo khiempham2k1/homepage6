@@ -900,10 +900,6 @@ li.list-menu__item .list-menu__title {
     align-items: center;
 }
 
-.flash-sale .see-next .chevron-right {
-    background-color: #95ae00;
-    color: #fff;
-}
 
 .product-item {
     background-color: #ffffff;
@@ -1169,6 +1165,11 @@ li.list-menu__item .list-menu__title {
     height: 40px;
     color: #fff;
     border-radius: 50%;
+    background-color: #09432b;
+}
+
+.product-label div:hover, .see-next .chevron:hover{
+    background-color: #95ae00;
 }
 
 .product-label div:not(:last-child) {
